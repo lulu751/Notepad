@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/navigationbar_bg"
+	>
+
+	<SearchView android:id="@+id/sv"
+		android:layout_width="wrap_content"
+		android:searchIcon="@drawable/search"
+		android:layout_height="wrap_content"
+		android:iconifiedByDefault="false"
+		android:queryHint="Search Notes"/>
+
+
+	<Button
+	    android:id="@+id/bt_add"
+	    android:layout_height="35dp"
+	    android:layout_width="35dp"
+	    android:background="@drawable/navigationbar_add"
+	    android:layout_toLeftOf="@+id/bt_setting"
+	    android:layout_margin="5dp"
+	    />
+	<Button 
+	    android:id="@+id/bt_setting"
+	    android:layout_height="35dp"
+	    android:layout_width="35dp"
+	    android:background="@drawable/navigationbar_setting"
+	    android:layout_alignParentRight="true"
+	    android:layout_margin="5dp"
+	    />
+	
+</RelativeLayout>
