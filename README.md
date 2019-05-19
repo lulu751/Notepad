@@ -1,5 +1,6 @@
 
 基本要求：每个人必须完成
+
 （1） NoteList中显示条目增加时间戳显示
 
 
@@ -36,6 +37,7 @@
 
 
  （2）添加笔记查询功能（根据标题查询）
+ 
  
  效果图：
  
@@ -75,13 +77,16 @@
  附加功能：
  （1）添加记事便签以及长按实现编辑与删除功能
  
+ 
  效果图：
+ 
  1、添加功能：
  
  ![](https://i.loli.net/2019/05/19/5ce0e7a9f17c013330.png)
  
  
  2、 长按实现编辑与删除：
+ 
   
  ![](https://i.loli.net/2019/05/19/5ce0e73d6063316438.png)
  
@@ -139,6 +144,7 @@
  核心代码：
  
  布局代码：
+ 
  ```
  <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -199,11 +205,9 @@
 </RelativeLayout>
 ```
 逻辑代码：
+
 ```
 
-public class LineEditText extends EditText {
-	private Rect mRect;
-	private Paint mPaint;
 	
 	public LineEditText(Context context, AttributeSet attrs) {
 		// TODO Auto-generated constructor stub
@@ -230,8 +234,6 @@ public class LineEditText extends EditText {
 	}
 }
 
-
-public class TouchView extends View {
  
 	private Bitmap  mBitmap,myBitmap;
 	private Canvas  mCanvas;
